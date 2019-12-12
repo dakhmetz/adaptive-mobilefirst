@@ -1,9 +1,12 @@
-@media screen and ( max-width: 1200px )
+@media screen and ( max-width: 1241px )
   html
     font-size: 12px
   .nav
     &__item
       margin-right: 1rem
+  .contacts
+    &__button
+      display: none
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -26,13 +29,22 @@
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
+      margin: 0 auto
+      width: 100%
+    &__title
+      font-size: 2rem
+      max-width: 30rem
     &__text
       font-size: 1.29rem
       margin-bottom: 2.28rem
+      max-width: 22.7rem
     &__button
       display: block
-      min-width: 22.86rem
+      width: 100%
+      margin-bottom: 1.85rem
+    &__button-outline
+      display: block
+      width: 100%
       margin-bottom: 1.85rem
 @media screen and ( max-height: 520px )
   .hero
