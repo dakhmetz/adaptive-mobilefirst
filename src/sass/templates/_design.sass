@@ -19,14 +19,15 @@
   &__title
     font-family: 'Yeseva One', cursive
     font-size: 1.29rem
-    margin-bottom: 0.7rem
+    margin-bottom: 0.5rem
+    padding-left: 0.3rem
   &__list
-    padding: 0 0 0 0.8rem
+    padding: 0 0 0 1.3rem
     margin: 0
     font-size: 1.08rem
     line-height: 1.85rem
     color: $secondary
-    margin-bottom: 1.7rem
+    margin-bottom: 2.2rem
   &__pricetag
     position: absolute
     left: 0
@@ -36,15 +37,51 @@
     text-transform: uppercase
     background-color: $primary
     color: $light
-    padding: 1.1rem 2.57rem
+    padding: 1.2rem
+    padding-left: 2.25rem
+    padding-right: 5.8rem
 .mrow 
   display: flex
   align-items: center
   flex-direction: column
+
 @media screen and ( min-width: 760px )
+  .section
+    &-title
+      &__heading
+        color: $light
+      &__description
+        color: $light
   .mrow
     flex-direction: row
     justify-content: space-between
+    align-items: baseline
+    flex-wrap: wrap
+  .mcard
+    flex-basis: 48%
+    &__text
+      position: relative
+      max-width: 23.6rem
+      margin: 0 auto
+      margin-top: -9rem
+      padding: 1.79rem 2.14rem
+      background-color: $light
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+
+@media screen and ( min-width: 1024px )
+  .section
+    &-title
+      &__heading
+        color: $dark
+      &__description
+        color: $dark
+  .design
+    background: linear-gradient(to bottom, $light 50%, $dark 50%)
+  .mrow
+    flex-direction: row
+    justify-content: space-between
+    align-items: baseline
+    flex-wrap: wrap
   .mcard
     flex-basis: 32%
     &__text
@@ -55,3 +92,4 @@
       padding: 1.79rem 2.14rem
       background-color: $light
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    
